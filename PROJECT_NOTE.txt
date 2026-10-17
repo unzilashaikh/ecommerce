@@ -1,101 +1,14 @@
-================================================================================
-                           LUMINA LIVING & AUDIO STUDIO
-                       SHORT PROJECT NOTE & SPECIFICATION
-================================================================================
+LUMINA — Short Project Note
 
-1. STORE CONCEPT & BRAND IDENTITY
---------------------------------------------------------------------------------
-- Brand Name: LUMINA — Living, Audio & Workspace Studio
-- Concept & Philosophy: 
-  A premium, boutique direct-to-consumer (D2C) lifestyle storefront curated 
-  for design-conscious creators, architects, and audiophiles. The store's 
-  core ethos revolves around "Objects of Intention" — combining Nordic 
-  minimalism, acoustic precision, tactile craftsmanship, and warm ambient living.
+PURPOSE / STORE CONCEPT:
+- Premium D2C e-commerce store for luxury audio & workspace gear.
+- 1-Click WhatsApp Direct Ordering (no complex login or payment gateway needed).
+- Includes Black Friday offers hub, quick view preview, persistent wishlist, and product comparison.
 
-- Product Disciplines & Collections:
-  * Audio & Sound: Audiophile spatial headphones, electrostatic monitors, DACs
-  * Workspace Gear: Solid American walnut MagSafe docks, mechanical keyboards
-  * Home & Lighting: Ceramic arc ambient lighting, tactile dimmers
-  * Lifestyle Objects: Obsidian thermal flasks, minimal carry gear
-
-- Conversational Commerce (WhatsApp 1-Click Checkout):
-  Instead of forcing users through cumbersome multi-step third-party payment 
-  gateways, every product card, quick preview modal, cart drawer, and checkout 
-  form is integrated with instant WhatsApp invoice dispatch. Customers can place 
-  orders, ask questions, or select custom finishes with one click.
-
-- Upcoming Black Friday & Promotional Hub:
-  A dedicated interactive campaign page (/offers) featuring an animated Black 
-  Friday robot mascot GIF, live ticking countdown timer, VIP WhatsApp drop 
-  alert registration, and one-click copyable coupon vouchers.
-
-
-2. TECHNOLOGIES USED
---------------------------------------------------------------------------------
-- Frontend Library: 
-  * React 19 (React & React-DOM)
-
-- Build Tool & Development Server:
-  * Vite (v8) — Fast HMR (Hot Module Replacement) and optimized Rollup bundling
-
-- Routing & Navigation:
-  * React Router DOM (v7)
-  * Browser History API with custom automatic ScrollToTop reset on every route
-
-- State Management & Architecture:
-  * React Context API (CartContext, WishlistContext, CompareContext, ToastContext)
-  * Custom React Hooks (useCart, useWishlist, useCompare, useToast)
-  * Persistent State: Browser localStorage ('lumina_cart', 'lumina_wishlist')
-
-- Styling & Design System:
-  * Pure Vanilla CSS (Custom Design System in index.css)
-  * Design Tokens (CSS3 Custom Properties / Variables for HSL palette, radii, shadows)
-  * Modern Layouts: Responsive CSS Grid, Flexbox, Dynamic clamp() Typography
-  * Fluid Animations: Custom cubic-bezier easings, drawer transitions, and backdrop blurs
-  * Responsive Design: Mobile-First architecture with clean tablet & desktop breakpoints
-
-- Typography & Visual Assets:
-  * Modern Web Typography: Plus Jakarta Sans & Inter
-  * Custom Geometric SVG Branding Logo (Logo.jsx)
-  * Official Scalable Vector WhatsApp Icon (WhatsAppIcon.jsx)
-  * Curated high-resolution product photography with uniform aspect ratios
-
-- Tooling & Deployment:
-  * Git & GitHub Version Control (Branch: main)
-  * Node.js & npm package ecosystem
-
-
-3. KEY ARCHITECTURAL FEATURES
---------------------------------------------------------------------------------
-1. Instant Scroll Restoration:
-   - Every route click immediately resets window and document scroll position to 
-     the very top (0, 0) via ScrollToTop.jsx.
-
-2. Mobile-Responsive Navigation:
-   - Desktop view features a clean horizontal navigation bar with no hamburger clutter.
-   - Mobile & tablet screens (<= 1024px) seamlessly switch to a high-contrast dark 
-     menu button that triggers a smooth off-canvas luxury slide-in drawer.
-
-3. Quick View Modal:
-   - Allows shoppers to inspect product photos, switch color finishes, select 
-     quantities, and order via WhatsApp without navigating away from the catalog.
-
-4. Smart Search Overlay:
-   - Instant live keyboard-accessible catalog search (Shortcut: Ctrl + K) with 
-     category quick-filters and thumbnail previews.
-
-5. Persistent Wishlist:
-   - Saves favorite products in localStorage with a live header badge, dedicated 
-     /wishlist route, and bulk actions ("Move All to Bag", "Order All on WhatsApp").
-
-6. Side-by-Side Product Compare:
-   - Compare up to 3 products simultaneously on technical specifications 
-     (Battery, Noise Cancellation, Connectivity, Warranty, Price).
-
-7. Simulated Checkout & Tracking Demo:
-   - Complete frontend checkout validation with contact info, shipping methods, 
-     demo payment options, and an order confirmation timeline (/order-confirmation).
-
-================================================================================
-Repository: https://github.com/unzilashaikh/ecommerce
-================================================================================
+TECHNOLOGIES USED:
+- Core: React 19 + JavaScript
+- Build Tool: Vite
+- Routing: React Router DOM (v7) with automatic Scroll-to-Top
+- State Management: React Context API + localStorage (Cart & Wishlist)
+- Styling: Pure Vanilla CSS (Responsive for mobile, tablet, and desktop)
+- Deployment/VCS: Git & GitHub
